@@ -1,0 +1,60 @@
+package estructuraestatica;
+import java.util.Scanner;
+public class Menu {
+    
+    static void Main(String[] args)
+        {
+            Scanner entrada = new Scanner (System.in);
+
+            int sumatoria = 0, factorial = 0, numero = 0;
+
+            System. out. println("Elija el procedimiento que desea realizar ");
+            System. out. println("1-Salir");
+            System. out. println("2-Sumatorio");
+            System. out. println("3-Factorial");
+
+            int continuar = entrada.nextInt();
+
+            do
+            {
+                System. out. println("Ingrese un número");
+                numero = entrada.nextInt();
+
+                for (int i=1;i<=numero;i++)
+                {
+                    sumatoria = sumatoria + i;
+                    
+                }
+                System. out. println(sumatoria);
+
+                System. out. println("Elija el procedimiento que desea realizar ");
+                System. out. println("1-Salir");
+                System. out. println("2-Sumatorio");
+                System. out. println("3-Factorial");
+
+                continuar = entrada.nextInt();
+
+            } while (continuar == 2);
+
+            do
+            {
+                System. out. println("Ingrese un número");
+                numero = entrada.nextInt();
+
+                for (int i = 1; i <= numero; i++)
+                {
+                    factorial = factorial* i;
+                }
+                System. out. println(factorial);
+
+                System. out. println("Elija el procedimiento que desea realizar ");
+                System. out. println("1-Salir");
+                System. out. println("2-Sumatorio");
+                System. out. println("3-Factorial");
+
+                continuar = entrada.nextInt();
+
+            } while (continuar == 3);
+
+        }
+}

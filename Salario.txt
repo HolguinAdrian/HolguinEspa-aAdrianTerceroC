@@ -1,0 +1,52 @@
+package estructuraestatica;
+import java.util.Scanner;
+public class Salario {
+    
+    static void Main(String[] args)
+        {
+            Scanner entrada = new Scanner (System.in);
+            int salario = 0, horasExtras = 0, salarioHorasExtras = 0, salarioTotal = 0;
+            
+
+            System. out. println("¿Desea calcular salario salario? ");
+            System. out. println("1-Sí");
+            System. out. println("2-No");
+
+            int continuar = entrada.nextInt();
+
+            do
+            {
+                System. out. println(" ");
+                System. out. println("Introduzca número de horas de trabajo: ");
+                int horas = entrada.nextInt();
+
+                if (horas <= 35)
+                {
+                    salario = horas * 15;
+                    System. out. println("**************************************");
+                    System. out. println("El salario total es: " + salario);
+                    System. out. println("**************************************");
+                }
+                else
+                {
+                    horasExtras = horas - 35;
+                    salarioHorasExtras = horasExtras * 22;
+                    salario = 35 * 15;
+                    salarioTotal = salario + salarioHorasExtras;
+                    System. out. println("**************************************");
+                    System. out. println("El salario total es: " + salarioTotal);
+                    System. out. println("**************************************");
+                    
+
+                }
+                System. out. println("¿Desea calcular salario salario? ");
+                System. out. println("1-Sí");
+                System. out. println("2-No");
+
+                continuar = entrada.nextInt();
+
+                
+
+            } while (continuar == 1);
+        }
+}

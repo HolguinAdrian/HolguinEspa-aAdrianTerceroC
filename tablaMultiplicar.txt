@@ -1,0 +1,21 @@
+
+package estructuraestatica;
+import java.util.Scanner;
+public class tablaMultiplicar {
+    
+    static void Main(String[] args)
+        {
+            Scanner entrada = new Scanner (System.in);
+            int i=0, multiplicacion=0;
+            
+            System. out. println("Ingrese valor para calcular la tabla de multiplicar: ");
+            int numero = entrada.nextInt();
+
+            for(i=0; i<=15; i++)
+            {
+                multiplicacion = numero * i;
+                System. out. println(numero+"x"+i+"="+multiplicacion);
+            }
+           
+        }
+}
