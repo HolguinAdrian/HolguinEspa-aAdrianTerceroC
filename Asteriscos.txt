@@ -1,0 +1,27 @@
+package estructuraestatica;
+import java.util.Scanner;
+public class Asteriscos {
+    
+    static void Main(String[] args)
+        {
+            Scanner entrada = new Scanner (System.in);
+            int i = 0, j=0, l=0;
+            
+            System. out. println("Ingrece número de escalones para la pirámide: ");
+            int numero = entrada.nextInt();
+
+            for (i=0; i<numero; i++)
+            {
+                for (j = i; j<numero; j++)
+                {
+                    System. out. print(" ");
+                }
+                for (l = 0; l != i; l++)
+                {
+                    System. out. print("**");
+                }
+                System. out. println("*");
+            }
+          
+        }
+}
